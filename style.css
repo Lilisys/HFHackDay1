@@ -8,11 +8,21 @@ body{
 }
 
 table{
-	display: none;
-	border: 5px solid #F94036;
-	width: 70%; 
+	/*display: none;*/
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 60%; 
+	margin: 10px auto;
 }
 
 td, th { 
 	border: 1px solid #F94036; 
-	} /* Add borders to cells */
+} /* Add borders to cells */
+
+th{
+	background-color: rgba(249,64,54,0.4); /* Black w/ opacity */
+}
+
+td {
+	text-align: center;
+}
