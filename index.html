@@ -11,24 +11,24 @@
 
 
 	<body>
-		<h1>Create Your Party</h1>
-		<p> Fill in the form to make a Pokemon Party!</p>
-		<form id="pokeform">
-			Pokemon 1 <br>
-			<input type="text" name="asdf" placeholder = "asdf"/><br>
-			Pokemon 2 <br>
-			<input type="text" name="asdf" placeholder = "asdf"/><br>
-			Pokemon 3 <br>
-			<input type="text" name="asdf" placeholder = "asdf"/><br>
-			Pokemon 4 <br>
-			<input type="text" name="asdf" placeholder = "asdf"/><br>
-			Pokemon 5 <br>
-			<input type="text" name="asdf" placeholder = "asdf"/><br>
-			Pokemon 6 <br>
-			<input type="text" name="asdf" placeholder = "asdf"/><br>
-			<input type="submit" value="GO!"/>
-		</form>
+		<div class="middle">
+			<h1>Create Your Party</h1>
+			<p> Fill in the form to make a Pokemon Party!</p>
+			<form id="pokeform">
+				
+				<input id="userIn" type="text" name="ChosenPokemon" placeholder = "Enter Pokemon Name"/><br>
+		
+				<input type="button" id="submitButton" value="GO!"/>
+			</form>
 
+			<table id="pokeTable">
+				<tr>
+					<th>Pokemon</th>
+					<th>Type</th>
+					<th>Type 2</th>
+				</tr>
+			</table>
+		</div>
 		<script src="backend.js"></script>
 	</body>
 

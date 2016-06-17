@@ -1,3 +1,18 @@
 body{
 	font-family: 'Raleway', sans-serif;
 }
+
+.middle{
+	width: 30%;
+	margin: 0 auto;
+}
+
+table{
+	display: none;
+	border: 5px solid #F94036;
+	width: 70%; 
+}
+
+td, th { 
+	border: 1px solid #F94036; 
+	} /* Add borders to cells */
