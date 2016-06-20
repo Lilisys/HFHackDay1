@@ -16,10 +16,11 @@ you don't need to worry about the networking and web transfer stuff
 
 ## Postgres
 [Make a new user](http://stackoverflow.com/questions/28276706/postgresql-error-fatal-role-username-does-not-exist)
-List all databases: `\list` or `\l`
-List all tables in the current database: `\dt`
-Switch db: `\connect database_name`
-Create db: `create database name`
-Change db permission: `GRANT ALL PRIVILEGES ON DATABASE my_newly_created_db_name TO my_user_name;`
+
+- List all databases: `\list` or `\l`
+- List all tables in the current database: `\dt`
+- Switch db: `\connect database_name`
+- Create db: `create database name`
+- Change db permission: `GRANT ALL PRIVILEGES ON DATABASE my_newly_created_db_name TO my_user_name;`
 
 [Configure it](http://stackoverflow.com/questions/5881845/how-to-manually-configure-and-start-postgresql-on-windows)

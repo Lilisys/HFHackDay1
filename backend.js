@@ -1,3 +1,5 @@
+var dbLocation = "http://localhost:3000/api/v1/pokemon"
+
 $("#submitButton").click(function(event){
 	apiQuery(String($("#userIn").val()));
 });
@@ -26,9 +28,23 @@ function postAPI(response){
 		types[2] = "N/A";
 	}
 
-	var htmlString = "<tr><td>" + name + "</td><td>" + types[1] +"</td><td>" + types[2] + "</td></tr>"
-	$('#pokeTable').append(htmlString);
-	$('#pokeTable').show();
+	var sendData = JSON.stringify({name: name, type: types[1], type_2: types[2]});
+	
+	console.log(sendData);
+
+	$.post(dbLocation, sendData)
+		 .success(function(data) {
+        console.log(data);
+        var htmlString = "<tr><td>" + name + "</td><td>" + types[1] +"</td><td>" + types[2] + "</td></tr>"
+				$('#pokeTable').append(htmlString);
+				$('#pokeTable').show();
+    })
+    .error(function(error) {
+        console.log('Error: ' + error);
+    });
+
+
+	
 }
 
 // var apiCallTest = "http://pokeapi.co/api/v2/pokemon/mudkip";
